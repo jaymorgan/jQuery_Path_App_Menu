@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "JustVector";
+  src: url("../fonts/justvectorv2-webfont.eot");
+  src: local("justvectorv2-webfont");
+  src: url("../fonts/justvectorv2-webfont.svg#bingo") format("svg");
+  src: url("../fonts/justvectorv2-webfont.ttf") format("opentype");
+}
+
+/* line 10, ../src/dots.sass */
+.font {
+  font-family: "JustVector";
+  font-weight: normal;
+  font-style: normal;
+  color: white;
+  margin-top: 6px;
+  margin-left: 2px;
+  font-size: 1.6em;
+  display: block;
+}
+
+/* line 20, ../src/dots.sass */
+.mainDotBG img {
+  margin-left: 10px;
+  margin-top: 10px;
+  -moz-transition-property: transform;
+  -webkit-transition-property: transform;
+  -o-transition-property: transform;
+  transition-property: transform;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+/* line 26, ../src/dots.sass */
+.mainDotBGRotated {
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* line 29, ../src/dots.sass */
+body {
+  position: relative;
+}
+
+/* line 32, ../src/dots.sass */
+#dots {
+  position: fixed;
+  bottom: 80px;
+  left: 30px;
+  text-shadow: #aaaaaa 0px 0px 1px;
+}
+
+/* line 38, ../src/dots.sass */
+#mainDot {
+  width: 40px;
+  height: 40px;
+  z-index: 3;
+  position: absolute;
+  background-color: #dd0000;
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  -o-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  border: 3px solid white;
+}
+
+/* line 50, ../src/dots.sass */
+.smallDot {
+  background: grey;
+  width: 25px;
+  height: 25px;
+  border: 3px solid white;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  -o-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  position: absolute;
+  top: 6;
+  left: 6;
+}
+
+/* line 64, ../src/dots.sass */
+.smalldot:hover {
+  background: #333333;
+  cursor: pointer;
+}
+
+/* line 68, ../src/dots.sass */
+body {
+  background: linear-gradient(225deg, #444444, #444444 32px, rgba(0, 0, 0, 0) 0%) 152px 156px, linear-gradient(45deg, #bbbbbb, #bbbbbb 32px, rgba(120, 120, 120, 0) 0%) 107px 0;
+  background-size: 200px 200px, 200px 200px;
+  background-repeat: repeat, repeat;
+  background-composite: source-over, source-over;
+  background-color: transparent;
+}
